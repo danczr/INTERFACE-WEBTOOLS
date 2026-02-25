@@ -12,20 +12,19 @@ html {
 }
 
 body {
-    background: linear-gradient(145deg, #00c652 0%, #009345 100%);
+    background: linear-gradient(145deg, #00C43C 0%, #00B969, #01ACA2 100%);
     color: white;
     overflow-x: hidden;
 }
 
-/* --- Marca d'água no fundo --- */
+/*Marca d'água no fundo*/
 .bg-watermark {
     position: fixed;
-    bottom: -100px;
-    right: -100px;
-    width: 600px;
-    height: 600px;
-    /* Certifique-se de que a logo esteja na mesma pasta com este nome */
-    background: url('LOGOFPF.png') no-repeat center;
+    bottom: -80px;
+    right: -65px;
+    width: 700px;
+    height: 700px;
+    background: url('DEVTOOLSLOGO.png') no-repeat center;
     background-size: contain;
     opacity: 0.08;
     z-index: -1;
@@ -41,7 +40,7 @@ body {
     padding: 20px;
 }
 
-/* ================= LOBBY ================= */
+/*LOBBY*/
 .lobby-container { text-align: center; }
 
 .brand { margin-bottom: 50px; }
@@ -54,7 +53,7 @@ body {
 .web-tools-title {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-top: -5px;
+    margin-top: -10px;
 }
 
 .cards-grid {
@@ -95,14 +94,15 @@ body {
     transition: transform 0.1s;
 }
 
-/* ================= FERRAMENTAS GERAIS ================= */
+/*FERRAMENTAS GERAIS*/
 .tool-container {
     width: 100%;
     max-width: 750px;
     text-align: center;
 }
 
-.small-logo { max-width: 200px; margin-bottom: 60px; }
+.small-logo { max-width: 50px; margin-bottom: 30px; filter: invert(1);}
+.small-logo2 { max-width: 80px; margin-bottom: 15px; filter: invert(1);}
 
 .input-bar {
     display: flex;
@@ -128,7 +128,7 @@ body {
 
 .input-bar input::placeholder { color: rgba(255, 255, 255, 0.6); }
 
-/* Seletor (Dropdown) no Conversor */
+/*Seletor do Conversor*/
 .type-select {
     background: rgba(255, 255, 255, 0.2);
     border: none;
@@ -142,7 +142,7 @@ body {
 
 .type-select option { background: #009345; color: white;}
 
-/* Botão de Ação Principal (Verde Claro) */
+/*Botão de Ação Principal*/
 .action-btn {
     background: #64f475;
     color: #005f23;
@@ -156,7 +156,7 @@ body {
 
 .action-btn:active { transform: scale(0.95); transition: transform 0.1s; }
 
-/* --- Caixas de Resultado e Botões de Copiar --- */
+/*Caixas de Resultado e Botões de Copiar*/
 .result-box {
     margin-top: 30px;
     text-align: left;
@@ -174,7 +174,7 @@ body {
     background: rgba(0, 0, 0, 0.2) !important;
     border-radius: 12px !important;
     padding: 12px 15px !important;
-    color: #4ADE80 !important; /* Destaque na cor do resultado */
+    color: #4ADE80 !important; /*Destaque na cor do resultado*/
     font-weight: 700;
     flex: 1;
     border: none;
@@ -194,7 +194,7 @@ body {
 
 .copy-small-btn:active { transform: scale(0.92); }
 
-/* --- Slider do Gerador de Senhas --- */
+/*Slider do Gerador de Senhas*/
 .settings-box {
     margin-top: 25px;
     background: rgba(255, 255, 255, 0.1);
@@ -214,7 +214,7 @@ body {
 .range-container label { font-size: 0.9rem; font-weight: 600; }
 .range-container label span { color: #64f475; font-size: 1.1rem; }
 
-/* Customização do input type="range" (A Barra de deslizar) */
+/*Barra de deslizar*/
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
@@ -240,7 +240,7 @@ input[type=range]::-webkit-slider-thumb {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Link de voltar ao menu */
+/*Link de voltar ao menu*/
 .back-link {
     display: inline-block;
     margin-top: 40px;
@@ -250,3 +250,7 @@ input[type=range]::-webkit-slider-thumb {
     transition: 0.2s;
 }
 .back-link:hover { opacity: 1; }
+
+h2{
+    height: 80px;
+}
