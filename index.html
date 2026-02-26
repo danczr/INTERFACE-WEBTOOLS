@@ -106,9 +106,13 @@
             <h2 class="web-tools-title">Gerador de Senhas</h1>
             
             <div class="input-bar">
-                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                <input type="text" name="senha_gerada" readonly placeholder="Sua senha aparecerá aqui">
-                <button class="action-btn">Gerar Senha</button>
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+        <input type="text" id="senha-output" name="senha_gerada" readonly placeholder="Sua senha aparecerá aqui">
+        <button class="copy-small-btn" id="btn-copiar-senha" style="height: 40px; padding: 0 15px;">Copiar</button>
+        <button class="action-btn" id="btn-gerar">Gerar Senha</button>
             </div>
 
             <div class="settings-box">
